@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qmT-hz-Cfg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="twitterCell" id="qmT-hz-Cfg">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qmT-hz-Cfg" id="vUV-B4-aOg">
@@ -44,6 +44,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="アカウント一覧" id="P5s-Yg-cNu"/>
                     <connections>
+                        <outlet property="twitterTableView" destination="bpP-O8-8iP" id="7nR-Fl-UKV"/>
                         <segue destination="tyO-ON-Inu" kind="show" id="K6f-bn-Ov3"/>
                     </connections>
                 </viewController>
@@ -54,7 +55,7 @@
         <!--詳細-->
         <scene sceneID="umD-7Q-UQf">
             <objects>
-                <viewController id="tyO-ON-Inu" sceneMemberID="viewController">
+                <viewController id="tyO-ON-Inu" customClass="DetailViewController" customModule="TwitterLink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HHJ-uA-XFf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
