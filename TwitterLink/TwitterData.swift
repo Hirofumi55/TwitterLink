@@ -23,9 +23,9 @@ class TwitterData {
     ]
     
     // TwitterのFQDN
-    static let urlString = "https://twitter.com"
+    static let urlString = "https://twitter.com/"
     
     // アクセスするTwitterのURL
-    static var url = "https://twitter.com"
+    static var url = "https://twitter.com/"
     
 }

@@ -58,14 +58,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // セルがタップ
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
+        //let cell = tableView.cellForRow(at: indexPath)
         
         // アクセス先となるURLを生成する
-        let path = cell?.detailTextLabel?.text
+        // TwitterData.urlにアクセス先となるURLが更新される
+        let paths = Array(TwitterData.twitterMap.values)
+        let path = paths[indexPath.row]
+        
         TwitterData.url = TwitterData.urlString + path
         
-        
-        
+        self.performSegue(withIdentifier: "detailTwitter", sender: nil)
     }
     
     

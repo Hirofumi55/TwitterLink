@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" title="アカウント一覧" id="P5s-Yg-cNu"/>
                     <connections>
                         <outlet property="twitterTableView" destination="bpP-O8-8iP" id="7nR-Fl-UKV"/>
-                        <segue destination="tyO-ON-Inu" kind="show" id="K6f-bn-Ov3"/>
+                        <segue destination="tyO-ON-Inu" kind="show" identifier="detailTwitter" id="K6f-bn-Ov3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="PKM-Uz-5WM"/>
                     </view>
                     <navigationItem key="navigationItem" title="詳細" id="loM-wK-bZh"/>
+                    <connections>
+                        <outlet property="twitterWebView" destination="v3Q-gH-5VW" id="Nz9-wJ-xyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b49-Sw-w9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,9 +9,20 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    // Twitter Web View
+    @IBOutlet weak var twitterWebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TwitterData.urlをURL型に変換
+        let url = URL(string: TwitterData.url)
+        // urlでリクエストする
+        let request = URLRequest(url: url!)
+        //指定したURLをWebViewに表示する
+        self.twitterWebView.loadRequest(request)
+        
 
         // Do any additional setup after loading the view.
     }
