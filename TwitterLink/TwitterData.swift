@@ -19,7 +19,8 @@ class TwitterData {
                       " Vitalik Buterin":"vitalikbuterin",
                       "Jeff Bezos":"jeffbezos",
                       "Jihan Wu":"jihanwu",
-                      "Elon Musk":"elonmusk"
+                      "Elon Musk":"elonmusk",
+                      "piyokango":"piyokango"
     ]
     
     // TwitterのFQDN
